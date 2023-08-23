@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "vectorai"
+version = "0.1.0"
+description = ""
+authors = ["Tony Bellomo <tony.bellomo@erm.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langchain = "^0.0.271"
+python-dotenv = "^1.0.0"
+openai = "^0.27.9"
+pypdf = "^3.15.2"
+sentence-transformers = "^2.2.2"
+tqdm = "^4.66.1"
+faiss-gpu = "^1.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

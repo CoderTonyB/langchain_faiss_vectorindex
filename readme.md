@@ -20,3 +20,12 @@ I added a config.yaml file where you can define the huggingface embeddings you w
 Also there is the save_path and index_name for FAISS vectorstore defined.
 
 I added the functions load_db, save_db, load_embeddings and load_config in the utils file, to reduce repetetive code in the other .py files.
+
+
+### Running with cuda 12
+
+It's difficult (or impossible) to install version 10 of the cuda sdk.  To make it work with the current version (12), download a compatible torch build:
+
+```
+pip3 install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu121
+```
